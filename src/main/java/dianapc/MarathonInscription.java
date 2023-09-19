@@ -51,7 +51,7 @@ public class MarathonInscription {
         System.out.println("Finally, put your age");
         int age = keyboard2.nextInt();
         
-        while ((!dni.equals("0")) && (!name.equalsIgnoreCase("fin"))){
+        while ((!dni.equals("0")) && (!name.equalsIgnoreCase("end"))){
             if (age >= 6 && age <= 10){
                 System.out.println("Your category in the marathon is: Minors A");
                 System.out.println("-----------");
