@@ -1,5 +1,5 @@
 
-package dianapc.variable;
+package dianapc;
 
 /*  Develop a program that allows the exchange of values between two variables.
     For example: If variable num1 is 35 and other variable num2 is 20,

@@ -1,4 +1,4 @@
-package dianapc.variable;
+package dianapc;
 import java.util.Scanner;
 
 public class EjercicioIntegradorCondicionales {
