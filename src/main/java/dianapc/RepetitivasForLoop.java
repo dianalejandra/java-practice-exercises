@@ -1,5 +1,5 @@
 
-package dianapc.variable;
+package dianapc;
 
 public class RepetitivasForLoop {
     
