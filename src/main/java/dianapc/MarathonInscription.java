@@ -1,6 +1,4 @@
-
 package dianapc;
-
 import java.util.Scanner;
 
 //<editor-fold defaultstate="collapsed" desc="comment">
@@ -40,6 +38,7 @@ se debe ingresar un dni con el valor 0 y un nombre con la palabra “fin”.
 //</editor-fold>
 
 public class MarathonInscription {
+    
     public static void main(String[] args){
         
         System.out.println("Welcome to the Immigrant Marathon! Here you will know to which category you should apply to. Please, input your DNI");
