@@ -1,12 +1,13 @@
 package dianapc;
 import java.util.Scanner;
 
-/*  Develop a program that shows on screen words that are inputed by keyboard
-    until 'exit' word is imputed (but not showed) and the loop breaks.
-
-    Realizar un programa que muestre en pantalla palabras que sean ingresadas
-    por teclado hasta que se ingrese la palabra “salir”.
-*/
+/**
+ * Develop a program that shows on screen words that are inputed by keyboard
+ * until 'exit' word is imputed (but not showed) and the loop breaks.
+ * 
+ * Realizar un programa que muestre en pantalla palabras que sean ingresadas
+ * por teclado hasta que se ingrese la palabra “salir”.
+ */
 
 public class WordChecker {
     public static void main(String[] args){
