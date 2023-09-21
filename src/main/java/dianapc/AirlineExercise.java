@@ -59,24 +59,24 @@ public class AirlineExercise {
         int flights [][] = new int [6][3];        
         Scanner keyboard = new Scanner (System.in);
         
+        System.out.println("Welcome to Techno Airlines!");
+        System.out.println("These are the available destinations marked by number:");
+        System.out.println("""
+                           0 - Rio de Janeiro
+                           1 - Cancun
+                           2 - Madrid
+                           3 - Rome
+                           4 - Milan
+                           5 - London""");
+        System.out.println("These are the available flight times also marked by number:");
+        System.out.println("""
+                           0 - Morning
+                           1 - Noon
+                           2 - Night""");
+        
         for (int f=0; f<6; f++){
             for (int c=0; c<3;c++){
-                
-                System.out.println("Welcome to techno Airlines!");
-                System.out.println("These are the available datinations marked by number:");
-                System.out.println("""
-                                   0 - Rio de Janeiro
-                                   1 - Cancun
-                                   2 - Madrid
-                                   3 - Rome
-                                   4 - Milan
-                                   5 - London""");
-                System.out.println("These are the available flight times also marked by number:");
-                System.out.println("""
-                                   0 - Morning
-                                   1 - Noon
-                                   2 - Night""");
-                System.out.println("Enter the amount of seats for destiny Nº " + f + " at the time " + c);
+                System.out.println("Enter the total amount of seats for destiny Nº " + f + " at the time " + c);
                 flights[f][c] = keyboard.nextInt();
             }            
         }
@@ -86,6 +86,7 @@ public class AirlineExercise {
         int destiny, hour, seats;
         
         while(!flag.equalsIgnoreCase("finish")){
+            System.out.println("---------- Flight Seats Sale ---------");
             System.out.println("Enter the destination Nº");
             destiny = keyboard.nextInt();
             System.out.println("Enter the time of the flight");
@@ -98,8 +99,10 @@ public class AirlineExercise {
                 flights[destiny][hour] = flights[destiny][hour] - seats;
                 
             }else{
-                System.out.println("sorry, your operation could not be completed as there are no more seats available.");
-            }
+                System.out.println("Sorry, your operation could not be completed as there are no more seats available.");
+            }            
+            System.out.println("Do you wish to continue making reservations? Enter the word 'finish' to end operations or any value to continue.");
+            flag = keyboard2.next();
         }
     }
 }
