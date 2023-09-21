@@ -1,6 +1,8 @@
 
 package dianapc;
 
+import java.util.Scanner;
+
 /**
  * A flight company has 6 destinations to which it makes 3 flights daily, one 
  * in the morning, one at noon and one at night. To manage this data, use a matrix,
@@ -54,6 +56,50 @@ public class AirlineExercise {
     
     public static void main (String[]args){
         
+        int flights [][] = new int [6][3];        
+        Scanner keyboard = new Scanner (System.in);
+        
+        for (int f=0; f<6; f++){
+            for (int c=0; c<3;c++){
+                
+                System.out.println("Welcome to techno Airlines!");
+                System.out.println("These are the available datinations marked by number:");
+                System.out.println("""
+                                   0 - Rio de Janeiro
+                                   1 - Cancun
+                                   2 - Madrid
+                                   3 - Rome
+                                   4 - Milan
+                                   5 - London""");
+                System.out.println("These are the available flight times also marked by number:");
+                System.out.println("""
+                                   0 - Morning
+                                   1 - Noon
+                                   2 - Night""");
+                System.out.println("Enter the amount of seats for destiny Nº " + f + " at the time " + c);
+                flights[f][c] = keyboard.nextInt();
+            }            
+        }
+        
+        Scanner keyboard2 = new Scanner (System.in);        
+        String flag = "";
+        int destiny, hour, seats;
+        
+        while(!flag.equalsIgnoreCase("finish")){
+            System.out.println("Enter the destination Nº");
+            destiny = keyboard.nextInt();
+            System.out.println("Enter the time of the flight");
+            hour = keyboard.nextInt();
+            System.out.println("Enter the amount of seats you want to acquire");
+            seats = keyboard.nextInt();
+            
+            if(flights[destiny][hour] >= seats){
+                System.out.println("Your reservation was made successfully");
+                flights[destiny][hour] = flights[destiny][hour] - seats;
+                
+            }else{
+                System.out.println("sorry, your operation could not be completed as there are no more seats available.");
+            }
+        }
     }
-    
 }
