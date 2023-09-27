@@ -1,5 +1,7 @@
 package dianapc;
 
+import dianapc.igu.MainPage;
+
 /**
  * We need a program to manage contacts in an electronic diary.
  *
@@ -48,7 +50,9 @@ public class ElectronicPhonebook {
 
     public static void main(String[] args) {
         
-        
+        MainPage page = new MainPage();
+        page.setVisible(true);
+        page.setLocationRelativeTo(null);
 
     }
 }
