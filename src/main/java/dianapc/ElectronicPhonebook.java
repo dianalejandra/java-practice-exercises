@@ -44,9 +44,11 @@ package dianapc;
  * (esta misma lógica se utiliza para cargar los datos).
  *
  */
-public class ElectronicAgenda {
+public class ElectronicPhonebook {
 
     public static void main(String[] args) {
+        
+        
 
     }
 }
